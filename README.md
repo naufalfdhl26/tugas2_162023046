@@ -1,10 +1,10 @@
-## ISB-310 Sistem Informasi Berbasis Web
+# ISB-310 Sistem Informasi Berbasis Web
 
-# NRP : 162023046
-# Nama : Naufal Fadhil Setiawan
+## NRP : 162023046
+## Nama : Naufal Fadhil Setiawan
 
-# Daftar Pengumpulan Tugas
-- Week 1 :
+### Daftar Penyerahan Tugas
+- [Week 1: Tugas](https://github.com/naufalfdhl26/WEEK-1)
 - Week 2 :
 - Week 3 :
 
