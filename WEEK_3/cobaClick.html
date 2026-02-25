@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: Arial;
+            margin: 40px;
+        }
+        button {
+            padding: 10px 10px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="counter()">Click me!</button>
+
+    <p id="text"></p>
+
+    <p>
+        Click the button to see the counter increase.
+    </p>
+
+    <p>
+        Close the browser tab (or window), and try again, and the counter is reset.
+    </p>
+
+    <script>
+        function counter() {
+            if (typeof(Storage) !== "undefined") {
+
+                if (sessionStorage.count) {
+                    sessionStorage.count = Number(sessionStorage.count) + 1;
+                } else {
+                    sessionStorage.count = 1;
+                }
+
+                document.getElementById("text").innerHTML =
+                    "You have clicked the button " + sessionStorage.count + " time(s) in this session.";
+
+            } else {
+                document.getElementById("text").innerHTML =
+                    "Browser tidak support storage.";
+            }
+        }
+    </script>
+
+</body>
+</html>
