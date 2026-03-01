@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #3d5a80;
+    color: #FF0000;
+    padding: 40px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #FF0000;
+    margin-bottom: 30px;
+    font-size: 36px;
+    transition: color 0.3s ease;
+}
+
+.preferences-box {
+    border: 3px solid #f5f5f5;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+.color-section-title {
+    color: #FF0000;
+    margin-bottom: 15px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #FF0000;
+    transition: color 0.3s ease;
+}
+
+.color-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 15px;
+}
+
+.color-option label {
+    color: #FF0000;
+    font-weight: bold;
+    min-width: 200px;
+    transition: color 0.3s ease;
+}
+
+.color-box {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #000;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.color-box:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#bgColorBox {
+    background-color: #3d5a80;
+}
+
+#textColorBox {
+    background-color: #FF0000;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: flex-start;
+}
+
+.btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-save {
+    background-color: #888888;
+    color: #000000;
+    padding: 6px 12px;
+    font-size: 12px;
+}
+
+.btn-save:hover {
+    background-color: #999999;
+    transform: scale(1.05);
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.modal.show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #2d2d2d;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 500px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+    animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.modal-title {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.color-palette {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.color-item {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #555;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+.color-item:hover {
+    transform: scale(1.1);
+    border-color: #fff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.color-item.selected {
+    border: 3px solid #00FFFF;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
+}
+
+.color-item.selected::after {
+    content: '✓';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #00FFFF;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.custom-section {
+    background-color: #444;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.custom-title {
+    color: #ccc;
+    font-size: 12px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.modal-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-modal {
+    flex: 1;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-cancel {
+    background-color: #555;
+    color: white;
+}
+
+.btn-cancel:hover {
+    background-color: #666;
+}
+
+.btn-select {
+    background-color: #008000;
+    color: white;
+}
+
+.btn-select:hover {
+    background-color: #006600;
+}
+
+.btn-select:disabled {
+    background-color: #888;
+    cursor: not-allowed;
+}
