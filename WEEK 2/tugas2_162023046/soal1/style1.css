@@ -1,0 +1,125 @@
+/* 
+saya mengerjakan tugas ini sendiri tanpa melakukan kecurangan seperti menggunakan, 
+mendupliaksi kode perogram kode program yang ada. jika saya melakukan kecurangan 
+dalam perngerjaan tugas ini maka saya siap menerima sanksi atau hukuman dari 
+dosen mata kuliah dan tuhan / allah swt
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #5F88A8;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 800px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.header {
+    background-color: #E2D800;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #032152;
+    border-top: 10px dotted #032152;
+    text-align: left;
+}
+
+.header h1 {
+    margin: 0;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+}
+
+.sidebar {
+    width: 300px;
+    padding: 20px;
+    background-color: white;
+    border-right: 2px dotted #032152;
+}
+
+.sidebar h2 {
+    border-bottom: 2px dotted #032152;
+    padding-bottom: 5px;
+    color: #032152;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 15px 0;
+}
+
+.sidebar ul li {
+    color: #032152;
+    margin-bottom: 5px;
+}
+
+.sidebar input {
+    width: calc(100% - 10px);
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+}
+
+.sidebar button {
+    padding: 5px 15px;
+    background-color: #032152;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.main {
+    width: 500px;
+    padding: 20px;
+    background-color: #D8D8D8;
+}
+
+.main h2 {
+    color: #032152;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    border: 3px solid #032152;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+th {
+    background-color: #032152;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    background-color: #9CBCD0;
+    border: 1px solid #ccc;
+}
+
+.footer {
+    background-color: #D8D8D8 !important;
+    color: #032152 !important;
+    font-style: italic;
+    border: none !important;
+}
