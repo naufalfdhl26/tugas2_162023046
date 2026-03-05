@@ -17,5 +17,6 @@
 
 ## 📚 Week 4
 - [Tugas 4](https://github.com/naufalfdhl26/162023046_SIWEB/tree/065bef43b20d5d983393f9b5ba763dd200d151c8/tugas4)
+- [Evaluasi 1](https://github.com/naufalfdhl26/162023046_SIWEB/tree/88b9dd4f130f7ad63e5f908d14338ffb4748450f/EVALUASI_1)
 
   Github ini ditujukan untuk memenuhi tugas mata kuliah ISB-310 Sistem Informasi Berbasis Web
