@@ -1,0 +1,54 @@
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+body { background-color: #f0f0f0; display: flex; justify-content: center; padding-top: 50px; }
+
+.card {
+    background-color: white;
+    padding: 30px;
+    width: 350px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    text-decoration: underline wavy black;
+    text-underline-offset: 5px;
+}
+
+.form-group { margin-bottom: 15px; }
+label { font-weight: bold; display: block; margin-bottom: 5px; font-size: 14px; }
+input[type="text"], input[type="email"] {
+    width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 3px; font-size: 14px;
+}
+
+/* Notifikasi */
+.msg-error { color: #d9534f; border: 1px solid #d9534f; padding: 10px; margin-bottom: 15px; font-size: 12px; }
+.msg-success { color: #5cb85c; border: 1px solid #5cb85c; padding: 10px; margin-bottom: 15px; font-size: 12px; }
+
+/* Tombol */
+.btn-submit {
+    width: 100%; padding: 10px; background-color: #4154f1; color: white;
+    border: none; border-radius: 3px; cursor: pointer; font-size: 16px; margin-bottom: 15px;
+}
+.btn-submit:hover { background-color: #303fba; }
+
+.nav-buttons { display: flex; }
+.nav-buttons a {
+    flex: 1; text-align: center; padding: 10px; background-color: black;
+    color: white; text-decoration: none; font-size: 12px; font-weight: bold; border: 1px solid #333;
+}
+.nav-buttons a:hover { background-color: #333; }
+
+/* List Data (Read) */
+.data-item {
+    background: #f9f9f9; padding: 10px; margin-bottom: 10px;
+    display: flex; justify-content: space-between; align-items: center; border-radius: 3px;
+}
+.data-info { font-size: 14px; }
+.data-info .email { color: #666; font-size: 12px; }
+.action-btns a {
+    padding: 5px 10px; text-decoration: none; color: white; font-size: 12px; border-radius: 3px;
+}
+.btn-edit { background-color: #5cb85c; }
+.btn-delete { background-color: #d9534f; }
